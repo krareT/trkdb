@@ -2,5 +2,5 @@
 	path = terark-zip-rocksdb
 	url = git@github.com:Terark/terark-zip-rocksdb.git
 [submodule "terark-rocksdb"]
-	path = terark-rocksdb
+	path = rocksdb
 	url = git@github.com:Terark/rocksdb.git
