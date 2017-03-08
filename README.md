@@ -5,8 +5,7 @@ TerarkDB is a core product of [Terark](http://terark.com). It is a RocksDB distr
 TerarkDB is completely compatible(binary compatible) with official RocksDB.
 
 
-# 2.Documentation
-Now you can experience our product easily, please refer to our product documentation for more detail.
+# 2.Installation & Documentation
 
 [TerarkDB Documentation](https://github.com/Terark/terarkdb/wiki)
 
