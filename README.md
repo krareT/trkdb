@@ -25,8 +25,10 @@ Our changes for RocksDB does not change any RocksDB API, and does not have any e
 
 Our changes includes:
 
--  Add optional two pass scan on SSTable build, existing SSTable is not impacted.
--  Add [TerarkZipTable config by env var](https://github.com/Terark/terarkdb/wiki/Try-TerarkDB-With-Minimal-Effort), this change using functions in libterark-zip-table as weak symbol, this is why it does not depends on TerarkZipTable.
+- Add optional two pass scan on SSTable build, existing SSTable is not impacted.
+- Add [TerarkZipTable config by env var](https://github.com/Terark/terarkdb/wiki/Try-TerarkDB-With-Minimal-Effort)
+  - This change using functions in libterark-zip-table as weak symbol, this is why it does not depends on TerarkZipTable.
+  - This change makes you compiling [our RocksDB](http://github/terark/rocksdb) a little more complicated: you need to clone [terark-zip-rocksdb](https://github.com/terark/terark-zip-rocksdb) and add `terark-zip-rocksdb/src` to `our RocksDB`'s include path(but `libterark-zip-rocksdb` is not need for compiling `our RocksDB`).
 
 # 4.License
 This software is open source, you can read the source code,
