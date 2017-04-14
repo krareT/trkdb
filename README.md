@@ -34,10 +34,19 @@ Our changes includes:
 see [Benchmark in wiki](https://github.com/Terark/terarkdb/wiki/Benchmark)
 
 # 5. License
-This software is open source, you can read the source code,
-but you can not compile this software by yourself,
-you must get [our](http://terark.com) comercial license to use this software in production.
+This software is open source.
 
+### submodule rocksdb
+TerarkDB has [our fork of rocksdb](https://github.com/Terark/rocksdb) as a submodule, this submodule rocksdb can be compiled by yourself.
+[License of submodule rocksdb](https://github.com/Terark/rocksdb/LICENSE) is same as offical rocksdb(BSD clause 3).
+
+### submodule terark-zip-rocksdb
+[submodule terark-zip-rocksdb's open source license](https://github.com/Terark/terark-zip-rocksdb/LICENSE) is Apache 2.0, with a NOTE:
+  * You can read or redistribute or use the source code under Apache 2.0 license
+  * But you can not compile this software by yourself, since this software depends on our core algorithms, which is proprietary and require a commercial license
+  * You can [download](https://github.com/Terark/terarkdb) the precompiled binary library of this software
+
+# 6. Contact
 - contact@terark.com
 - [terark.com](http://terark.com)
 
