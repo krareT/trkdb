@@ -30,7 +30,10 @@ Our changes includes:
   - This change using functions in libterark-zip-table as weak symbol, this is why it does not depends on TerarkZipTable.
   - This change makes you compiling [our RocksDB](http://github/terark/rocksdb) a little more complicated: you need to clone [terark-zip-rocksdb](https://github.com/terark/terark-zip-rocksdb) and add `terark-zip-rocksdb/src` to `our RocksDB`'s include path(but `libterark-zip-rocksdb` is not need for compiling `our RocksDB`).
 
-# 4.License
+# 4. Benchmark
+see [Benchmark in wiki](https://github.com/Terark/terarkdb/wiki/Benchmark)
+
+# 5. License
 This software is open source, you can read the source code,
 but you can not compile this software by yourself,
 you must get [our](http://terark.com) comercial license to use this software in production.
