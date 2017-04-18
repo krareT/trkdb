@@ -7,6 +7,8 @@ TerarkDB is completely compatible(binary compatible) with official RocksDB.
 
 # 2.Installation & Documentation
 
+[Download precompiled terark-zip-rocksdb](http://www.terark.com/download/terarkdb/latest)
+
 [TerarkDB Documentation](https://github.com/Terark/terarkdb/wiki)
 
 
@@ -16,6 +18,9 @@ TerarkDB has two components:
 ## 3.1. TerarkZipTable
 
 `TerarkZipTable` is contained in the [terark-zip-rocksdb](https://github.com/terark/terark-zip-rocksdb) submodule. `TerarkZipTable` is a `SSTable`(Static Sorted Table) implementation that using  &copy;&trade;Terark algorithms for RocksDB. 
+
+[Download precompiled terark-zip-rocksdb](http://www.terark.com/download/terarkdb/latest)
+
 
 ## 3.2. Terark modified RocksDB
 
@@ -45,7 +50,7 @@ This software is open source.
 [submodule terark-zip-rocksdb](https://github.com/Terark/terark-zip-rocksdb) implements an SSTable for [submodule rocksdb](https://github.com/Terark/rocksdb), [terark-zip-rocksdb license](https://github.com/Terark/terark-zip-rocksdb/blob/master/LICENSE) is Apache 2.0, with NOTES:
   * You can read or redistribute or use the source code under Apache 2.0 license
   * You can not compile this software by yourself, since this software depends on our proprietary core algorithms, which requires a commercial license
-  * You can [download](https://github.com/Terark/terarkdb) the precompiled binary library of this software
+  * You can [download](http://www.terark.com/download/terarkdb/latest) the precompiled binary library of this software
 
 # 6. Contact
 - contact@terark.com
