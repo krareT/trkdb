@@ -1,18 +1,18 @@
-# 1.Introduction
+# 1. Introduction
 
 TerarkDB is a core product of [Terark](http://terark.com). It is a RocksDB distribution that powered by &copy;&trade;Terark algorithms. with these algorithms, TerarkDB is able to store more data and access much faster than official RocksDB(3+X more data and 10+X faster) on same hardware.
 
 TerarkDB is completely compatible(binary compatible) with official RocksDB.
 
 
-# 2.Installation & Documentation
+# 2. Installation & Documentation
 
 [Download precompiled terark-zip-rocksdb](http://www.terark.com/download/terarkdb/latest)
 
 [TerarkDB Documentation](https://github.com/Terark/terarkdb/wiki)
 
 
-# 3.Components
+# 3. Components
 TerarkDB has two components:
 
 ## 3.1. TerarkZipTable
@@ -30,9 +30,9 @@ Our changes for RocksDB does not change any RocksDB API, and does not have any e
 
 Our changes includes:
 
-- Add optional two pass scan on SSTable build, existing SSTable is not impacted.
+- Add optional two pass scan on SSTable build, existing SSTable is not impacted
 - Add [TerarkZipTable config by env var](https://github.com/Terark/terarkdb/wiki/Try-TerarkDB-With-Minimal-Effort)
-  - This change using functions in libterark-zip-table as weak symbol, this is why it does not depends on TerarkZipTable.
+  - This change using functions in libterark-zip-table as weak symbol, this is why it does not depends on TerarkZipTable
 
 # 4. Benchmark
 see [Benchmark in wiki](https://github.com/Terark/terarkdb/wiki/Benchmark)
