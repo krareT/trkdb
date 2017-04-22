@@ -17,19 +17,17 @@ TerarkDB has two components:
 
 ## 3.1. TerarkZipTable
 
-`TerarkZipTable` is contained in the [terark-zip-rocksdb](https://github.com/terark/terark-zip-rocksdb) submodule. `TerarkZipTable` is a `SSTable`(Static Sorted Table) implementation that using  &copy;&trade;Terark algorithms for RocksDB. 
+`TerarkZipTable` is contained in the [terark-zip-rocksdb](https://github.com/terark/terark-zip-rocksdb) submodule. `TerarkZipTable` is a `RocksDB`'s `SSTable`(Static Sorted Table) implementation that using  &copy;&trade;Terark's searchable compression algorithms.
 
 [Download precompiled terark-zip-rocksdb](http://www.terark.com/download/terarkdb/latest)
-
 
 ## 3.2. Terark modified RocksDB
 
 We forked RocksDB and made a few changes to fit our algorithms, we've added it as a submodule named [rocksdb](https://github.com/terark/rocksdb) here.
 
-Our changes for RocksDB does not change any RocksDB API, and does not have any extra dependencies, say, Terark modified RocksDB does not depend on TerarkZipTable(Without TerarkZipTable, [Terark modified RocksDB](http://github/terark/rocksdb) works exactly same as official RocksDB).
+Our changes for RocksDB does not change any RocksDB API, and does not have any extra dependencies, say, Terark modified RocksDB does not depend on `TerarkZipTable`(Without `TerarkZipTable`, [Terark RocksDB](http://github/terark/rocksdb) works exactly same as official RocksDB).
 
 Our changes includes:
-
 - Add optional two pass scan on SSTable build, existing SSTable is not impacted
 - Add [TerarkZipTable config by env var](https://github.com/Terark/terarkdb/wiki/Try-TerarkDB-With-Minimal-Effort)
   - This change using functions in libterark-zip-table as weak symbol, this is why it does not depends on TerarkZipTable
