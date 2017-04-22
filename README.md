@@ -22,8 +22,7 @@ TerarkDB has two components:
 [Download precompiled terark-zip-rocksdb](http://www.terark.com/download/terarkdb/latest)
 
 ## 3.2. Terark modified RocksDB
-
-We forked RocksDB and made a few changes to fit our algorithms, we've added it as a submodule named [rocksdb](https://github.com/terark/rocksdb) here.
+We forked RocksDB and made a few changes to fit our algorithms, we've added it as [submodule rocksdb](https://github.com/terark/rocksdb) here.
 
 Our changes for RocksDB does not change any RocksDB API, and does not have any extra dependencies, say, Terark modified RocksDB does not depend on `TerarkZipTable`(Without `TerarkZipTable`, [Terark RocksDB](http://github/terark/rocksdb) works exactly same as official RocksDB).
 
